@@ -72,11 +72,15 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 testArray = [2,3,4];
 
-function sumArray(testArray){}
+function sumArray(testArray) {
+  var sumArray = testArray[0] + testArray[1] + testArray[2];
+  var string = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sumArray + ' is their sum.';
+  return [sumArray, string];
+}
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(2,3,4);
+testSumArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
